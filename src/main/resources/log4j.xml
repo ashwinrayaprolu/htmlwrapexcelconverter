@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+	debug="true">
+
+	<appender name="FILE-APPENDER" class="org.apache.log4j.FileAppender">
+		<param name="File" value="logs/excelconverter.log" />
+		<param name="Append" value="false" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="-----&gt; %d{yyyy-MM-dd HH:mm:ss.SSS} &lt;%t&gt; %m%n%n" />
+		</layout>
+	</appender>
+
+
+	<appender name="CONSOLE-APPENDER" class="org.apache.log4j.ConsoleAppender">
+		<param name="Append" value="false" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="-----&gt; %d{yyyy-MM-dd HH:mm:ss.SSS} &lt;%t&gt; %m%n%n" />
+		</layout>
+	</appender>
+
+	<appender name="ROLLING_FILE-APPENDER" class="org.apache.log4j.RollingFileAppender">
+		<param name="file" value="logs/excelconverter.log" />
+		<param name="MaxFileSize" value="5120KB" />
+		<!-- Keep one backup file -->
+		<param name="MaxBackupIndex" value="500" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="-----&gt; %d{yyyy-MM-dd HH:mm:ss.SSS} &lt;%t&gt; %m%n%n" />
+		</layout>
+	</appender>
+
+
+
+
+
+
+	<!--
+		The Following 5 logs can be turned on and off while the server is
+		running LIVE in order to trace the SQL and/or all JDBC coming out of
+		the application. To turn a log on, set the level value to INFO or
+		DEBUG (to see class name and line number information in the log) The
+		DEBUG setting is much more inefficient but the output is much more
+		useful. To turn off JDBC logging completely, you must set all 5 logs
+		to a level higher than ERROR (FATAL is suggested.)
+	-->
+
+
+	<root>
+		<priority value="DEBUG" />
+		<appender-ref ref="ROLLING_FILE-APPENDER" />
+	</root>
+
+
+</log4j:configuration>

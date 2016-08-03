@@ -1,0 +1,48 @@
+
+<html xmlns:x="urn:schemas-microsoft-com:office:excel">
+<head>
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name></x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml>
+<![endif]--> 
+</head>
+<body>
+<table cellpadding=0 class=sm cellspacing=0 border=0>
+<tr><td colspan=4>Test Report</td></tr> 
+<tr><td class=smblk>Date Range:&nbsp;&nbsp;</td>
+<td align=left class=sm>8/2/2010 - 8/2/2010</td></tr><tr>
+<td class=smblk>Race Type:&nbsp;&nbsp;</td><td align=left class=sm>All Races</td></tr><tr><td class=smblk>Hosts:&nbsp;&nbsp;</td><td align=left class=sm>All Hosts</td></tr><tr><td class=smblk>Locations:&nbsp;&nbsp;</td><td align=left class=sm>All Locations</td></tr><tr><td class=smblk>Tracks:&nbsp;&nbsp;</td><td align=left class=sm>All Tracks</td></tr><tr><td class=smblk>Report By:&nbsp;&nbsp;</td><td align=left class=sm>Location</td></tr>
+</table>
+
+<TABLE  cellpadding=2 cellspacing=4 > 
+ <TR valign=top> 
+ <td align=left nowrap class=headr>Location</td> 
+ <td align=right width=10% class=	>WPS<br>Handle</td> 
+ <td align=right width=10% class=headr>2-Runner<br>Ex Handle </td> 
+ <td align=right width=10% class=headr>3+Runner<br>Ex Handle</td> 
+ <td align=right width=10% class=headr>Exotics<br>Handle</td> 
+ <td align=right width=10% class=headr>Total<br>Handle</td> 
+ <td align=right width=10% class=headr>WPS<br>Takeout</td> 
+ <td align=right width=10% class=headr>Exotic<br>Takeout</td> 
+ <td align=right width=10% class=headr>Total<br>Takeout</td> 
+ <td align=right width=10% class=headr>Pos<br>Breakage</td> 
+ <td align=right width=10% class=headr>Neg<br>Breakage</td> 
+ <td align=right width=10% class=headr>Net<br>Breakage</td> 
+ <td align=right width=10% class=headr>Runner<br>Pay</td> 
+ </tr>
+<tr><td nowrap>TestLocation                       </td><td align=right>456464.00</td><td align=right>27.00</td><td align=right>10.60</td><td align=right>37.60</td><td align=right>138.60</td><td align=right>17.38</td><td align=right>8.02</td><td align=right>25.40</td><td align=right>1.60</td><td align=right>-0.40</td><td align=right>1.20</td><td align=right>87.70</td>
+<tr><td align=left><b>Total</b></td><td align=right><b>818.00</b></td><td align=right><b>30,503.00</b></td><td align=right><b>53,216.60</td><td align=right><b>83,719.60</b></td><td align=right><b>128,537.60</b></td><td align=right><b>7,789.14</b></td><td align=right><b>19,919.79</b></td><td align=right><b>27,708.93</b></td><td align=right><b>661.05</b></td><td align=right><b>-24.86</b></td><td align=right><b>636.19</b></td><td align=right><b>373.65</b></td>
+</td></tr></table>
+</body>
+</html>
