@@ -17,3 +17,44 @@ Quick Start
 Open your web browser to
 
     http://localhost:10100/convert?filePath=/Users/ashwinrayaprolu/Desktop/AuditCheck.xls  to test Conversion
+
+
+Integration
+---------------
+    Java
+        try 
+        {
+          request.getRequestDispatcher("http://localhost:10100/convert?filePath=/Users/ashwinrayaprolu/Desktop/AuditCheck.xls").forward(request, response);
+        }
+        catch (ServletException e)
+        {
+          e.printStackTrace();
+        }
+    
+    DotNet
+    <%
+        Server.Transfer("http://localhost:10100/convert?filePath=/Users/ashwinrayaprolu/Desktop/AuditCheck.xls") 
+    %> 
+    
+    PHP
+    
+    function forward($location, $vars = array()) 
+    {
+        $file ='http://'.$_SERVER['HTTP_HOST']
+    	.substr($_SERVER['REQUEST_URI'],0,strrpos($_SERVER['REQUEST_URI'], '/')+1)
+    	.$location;
+    
+        if(!empty($vars))
+        {
+             $file .="?".http_build_query($vars);
+        }
+    
+        $response = file_get_contents($file);
+    
+        echo $response;
+    }
+        
+    forward("http://localhost:10100/convert?filePath=/Users/ashwinrayaprolu/Desktop/AuditCheck.xls");
+    
+    
+    
