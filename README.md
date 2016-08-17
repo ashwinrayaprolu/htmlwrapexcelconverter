@@ -17,6 +17,8 @@ Quick Start
 Open your web browser to
 
     http://localhost:10100/convert?filePath=/Users/ashwinrayaprolu/Desktop/AuditCheck.xls  to test Conversion
+    (or) using URL
+    http://localhost:10100/convert?filePath=http://localhost:8080/test/AuditCheck.xls  to test Conversion
 
 
 Integration
